@@ -52,6 +52,8 @@ This project is a simple Vehicle Rental Service made in Django and Python.
    
 3. Add validators for various fields and add more robust checks.
 
+4. This app is currently not deployed anywhere.
+
 ## Contributing
 
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
