@@ -44,6 +44,14 @@ This project is a simple Vehicle Rental Service made in Django and Python.
    ```
 5. Navigate to `https://localhost:8000/home/` to use the app.
 
+## Limitations
+
+1. SQLITE3 is being used as a database, which is not recommended for production
+   
+2. Further Improvements in UI required, Currently only simple HTML and Bootstrap are used (Django Templates).
+   
+3. Add validators for various fields and add more robust checks.
+
 ## Contributing
 
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
