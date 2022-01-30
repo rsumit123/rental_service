@@ -1,0 +1,15 @@
+{% extends "home/index.html" %} {% load crispy_forms_tags %} {% block content %}
+<h3>Add Booking</h3>
+<form method="post">
+  {% csrf_token %} {{ form|crispy }}
+  <button type="submit" class="btn btn-success">Save Booking</button>
+</form>
+{% if messages %}
+<ul class="messages">
+  {% for message in messages %}
+  <li {% if message.tags %} class=" {{ message.tags }} text-danger " {% endif %}>
+    {{ message }}
+  </li>
+  {% endfor %}
+</ul>
+{% endif %} {% endblock %}

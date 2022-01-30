@@ -1,0 +1,19 @@
+{% extends "home/index.html" %} {% load crispy_forms_tags %} {% block content %}
+<p>A Simple Django App to Manage bookings of vehicles</p>
+<ul>
+  <li>
+    Add a Customer : Employess can add a new customer, if not already present,
+    upon successful addition the page will redirect to customer list
+  </li>
+  <li>
+    Create a new Booking : A new booking can be made in the name of the
+    customer.. If the inventory slots for the selected vehicle is full, customer
+    has to select new vehicle or contact admin to increase inventory
+  </li>
+  <li>
+    All Existing bookings, Inventory and customers can be viewed from View
+    Bookings, View Inventory and View Customers pages
+  </li>
+</ul>
+
+{% endblock %}

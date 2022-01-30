@@ -1,0 +1,8 @@
+{% extends "home/index.html" %} {% block content %}
+<h3>View Customers</h3>
+{% for customer in object_list %}
+<li class="list-group-item">
+  Name: {{ customer.name }} | Email: {{ customer.email }} | Phone:
+  {{customer.phone }}
+</li>
+{% endfor %} {% endblock %}

@@ -1,0 +1,31 @@
+{% extends "home/index.html" %} {% load crispy_forms_tags %} {% block content %}
+<h3>Add a Customer</h3>
+<form method="post">
+  {% csrf_token %} {{ form|crispy }}
+  <button type="submit" class="btn btn-success">Save Customer</button>
+</form>
+{% endblock %}
+
+<!-- <html>
+  <head>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    />
+    <style>
+      .i-am-centered {
+        margin: auto;
+        max-width: 300px;
+        padding-top: 20%;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="i-am-centered">
+      <form action="" method="post">
+        {% csrf_token %} {{form.as_table }} <input type="submit" value=Submit">
+      </form>
+    </div>
+  </body>
+</html> -->

@@ -1,0 +1,8 @@
+{% extends "home/index.html" %} {% block content %}
+<h3>View Bookings</h3>
+{% for booking in object_list %}
+<li class="list-group-item">
+  Customer: {{ booking.customer }} | Vehicle: {{ booking.vehicle_type }} | Date
+  Rented: {{ booking.rental_date }}
+</li>
+{% endfor %} {% endblock %}

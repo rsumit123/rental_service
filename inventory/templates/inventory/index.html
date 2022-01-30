@@ -1,0 +1,8 @@
+{% extends "home/index.html" %} {% block content %}
+<h3>View Inventory</h3>
+{% for inventory in object_list %}
+<li class="list-group-item">
+  Vehicle Type: {{ inventory.vehicle_type }} | Inventory:
+  {{inventory.available_quantity }}
+</li>
+{% endfor %} {% endblock %}
